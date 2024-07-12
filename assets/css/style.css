@@ -941,7 +941,7 @@ section .container {
   right: 0;
   top: 0;
   bottom: 0;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .portfolio-details .container {
@@ -955,9 +955,9 @@ section .container {
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-info {
+/* .portfolio-details .portfolio-info {
   padding-top: 45px;
-}
+} */
 
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -1328,4 +1328,69 @@ section .container {
   left: 0;
   top: 0;
   border-radius: 10px;
+}/* Add or modify these styles in assets/css/style.css */
+
+.portfolio-details {
+  padding: 30px 0;
+}
+
+.portfolio-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio-info ul li {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.portfolio-info p, .portfolio-info ol {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.portfolio-details-slider img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-info .content-container {
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 15px; /* Prevent content from being hidden behind the scrollbar */
+}
+
+.portfolio-info .content-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.portfolio-info .content-container::-webkit-scrollbar-thumb {
+  background-color: #18D26E;
+  border-radius: 10px;
+}
+
+.portfolio-info .content-container::-webkit-scrollbar-thumb:hover {
+  background-color: #19b361;
+}
+.portfolio-info ul li {
+  padding:0px !important;
+  font-size: 16px;
 }
